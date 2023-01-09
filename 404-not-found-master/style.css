@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*----------------------INITIAL ADJUSTMENTS AND RESETS----------------------------------- */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    padding: 2% 6%;
+}
+
+h5 {
+    font-size: 24px;
+}
+.hero {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-gap: 4rem;
+    left: 0;
+
+}
+.header {
+    width: 100%;
+    font-family: 'Inconsolata', monospace;
+}
+
+.title {
+    width: 93%;
+}
+.hero {
+    width: 100%;
+    height: 80vh;
+}
+
+img {
+    width: 690px;
+}
+.description p {
+    width: 50%;
+}
+.main-content h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 95px;
+    color: #333333;
+    word-spacing: 4px;
+    margin-bottom: 60px;
+    margin-top: -10px;
+}
+.main-content p {
+    line-height: 36px;
+    vertical-align: top;
+    font-size: 24px;
+    font-weight: 400;
+}
+.main-content .btn {
+    padding: 20px 35px;
+    margin-top: 60px;
+    background-color: #333333;
+    display: inline-block;
+    color: white;
+    font-size: 0.8rem;
+}
+footer {
+    margin-top: 90px;
+}
+.footer-content {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    color: #BDBDBD;
+}
+.footer-content h2 {
+    font-size: 1rem;
+}
+@media (width <= 1450px) {
+    .description p {
+        width: 80%;
+    }
+}
+@media (width <= 1260px){
+    .main-content h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    img {
+        width: 560px;
+    }
+}
+@media (width <= 1100px){
+    img {
+        width: 400px;
+    }
+    .main-content p  {
+        font-size: 19px;
+    }
+    .main-content h1 {
+        margin-bottom: 40px;
+    }
+
+    .main-content .btn {
+        margin-top: 40px;
+    }
+}
+
+@media (width <= 1100px){
+    .main-content h1 {
+        font-size: 50px;
+        margin-top: 0px;
+    }
+    .title {
+        width: unset;
+    }
+    .description p {
+        width: unset;
+    }
+    .main-content p  {
+        font-size: 19px;
+    }
+}
+
+@media (width <= 830px) {
+    .main-content h1 {
+        font-size: 36px;
+}
+    .main-content p  {
+        font-size: 17px;
+}
+}
+
+@media (width <= 760px){
+    .hero {
+        display: unset;
+    }
+    .image {
+        margin-top: 60px;
+    }
+    img {
+        width: 400px;
+    }
+
+    .main-content h1 {
+        font-size: 56px;
+        line-height: 95px;
+    }
+    .description {
+        margin-bottom: 25px;
+    }
+    .main-content p {
+        width: 83%;
+    }
+    .header {
+        margin: 6px 0px;
+    }
+    
+
+}
